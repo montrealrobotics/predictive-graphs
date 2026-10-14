@@ -189,7 +189,6 @@
     }
 
     .banner-figure img {
-      border: 1px solid var(--pg-line);
       border-radius: 8px;
     }
 
@@ -660,8 +659,7 @@
           <figure class="plot-figure">
             <img src="static/images/predictivegraphs/perpetua_star_tbma.png" alt="Log prior, likelihood and posterior odds over time for Perpetua*'s emergence and persistence models." loading="lazy">
             <figcaption data-caption="tbma">
-              <!-- TODO: caption body pending (see captions.md, "tbma"). -->
-              <strong>Perpetua* Tempered Bayesian Model Averaging</strong>
+              <strong>Perpetua* Tempered Bayesian Model Averaging</strong> Positive values favor the emergence model (𝓜<sub>E</sub>), which captures object appearance, while negative values favor the persistence model (𝓜<sub>P</sub>), which captures disappearance. The prior encodes long-term patterns, while the likelihood captures recent observations, letting the model adapt as new data arrives. When observations stop (<i>t<sub>a</sub></i> to <i>t<sub>b</sub></i>), the likelihood fades and the posterior is dominated by the prior, allowing the model to rely on previously learned patterns.
             </figcaption>
           </figure>
         </div>
