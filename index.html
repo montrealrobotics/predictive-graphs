@@ -515,9 +515,22 @@
       font-size: 0.9rem;
     }
 
+    @media (max-width: 480px) {
+      /* Two header buttons per row on phones. */
+      .publication-links .button {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        width: 9rem;
+      }
+    }
+
     @media (max-width: 768px) {
       .hero-body {
         padding-top: 2.75rem;
+      }
+
+      .abstract-copy {
+        text-align: left;
       }
 
       .publication-title {
@@ -585,12 +598,11 @@
                   <span>Code<small>out soon!</small></span>
                 </span>
               </span>
-              <!-- TODO: swap for a link button once the dataset is public. -->
               <span class="link-block">
-                <span class="button is-normal is-rounded is-soon" aria-disabled="true" title="Dataset release coming soon">
+                <a href="https://drive.google.com/file/d/1KwM8x9zny1HZXwjEwmueEMOsTbODiFL-/view?usp=sharing" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fas fa-database"></i></span>
-                  <span>Data<small>out soon!</small></span>
-                </span>
+                  <span>Data</span>
+                </a>
               </span>
             </div>
           </div>
@@ -742,7 +754,7 @@
         <h2 class="title is-3 has-text-centered">Real-World Experiments</h2>
 
         <div class="setup-layout">
-          <img src="static/images/predictivegraphs/real_lab_pcd.jpg" alt="Top-down and perspective point clouds of the three-room laboratory, with receptacles outlined." loading="lazy">
+          <img src="static/images/predictivegraphs/real_lab_pcd.webp" alt="Top-down and perspective point clouds of the three-room laboratory, with receptacles outlined." loading="lazy">
           <ul class="fact-list">
             <li><span class="icon"><i class="fas fa-calendar-alt"></i></span><span><strong>3 weeks</strong> of semi-static changes, updated every <strong>2 hours</strong></span></li>
             <li><span class="icon"><i class="fas fa-door-open"></i></span><span><strong>3 rooms</strong>, <strong>28 receptacles</strong>, <strong>21 objects</strong></span></li>
