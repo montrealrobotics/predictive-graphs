@@ -4,34 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="title" content="Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes">
-  <meta name="description" content="PredictiveGraphs augments open-vocabulary 3D scene graphs with temporal reasoning for predictive navigation in semi-static scenes.">
-  <meta name="keywords" content="PredictiveGraphs, Perpetua*, scene graphs, temporal reasoning, robotics, navigation, semi-static scenes">
+  <meta name="description" content="PredictiveGraphs augments open-vocabulary 3D scene graphs with temporal reasoning for predictive navigation in semi-static scenes. Accepted to IEEE Robotics and Automation Letters (RA-L), 2026.">
+  <meta name="keywords" content="PredictiveGraphs, Perpetua*, scene graphs, temporal reasoning, robotics, navigation, semi-static scenes, RA-L">
   <meta name="author" content="Miguel Saavedra-Ruiz, Charlie Gauthier, Kumaraditya Gupta, Shima Shahfar, Kirsty Ellis, Steven Parkison, Liam Paull">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
 
   <meta property="og:type" content="article">
   <meta property="og:title" content="Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes">
-  <meta property="og:description" content="PredictiveGraphs augments open-vocabulary 3D scene graphs with temporal reasoning for predictive navigation in semi-static scenes.">
+  <meta property="og:description" content="PredictiveGraphs augments open-vocabulary 3D scene graphs with temporal reasoning for predictive navigation in semi-static scenes. IEEE RA-L 2026.">
   <meta property="og:url" content="https://montrealrobotics.ca/predictive-graphs/">
-  <meta property="og:image" content="https://montrealrobotics.ca/predictive-graphs/static/images/predictivegraphs/banner.png">
+  <meta property="og:image" content="https://montrealrobotics.ca/predictive-graphs/static/images/predictivegraphs/banner.jpg">
   <meta property="og:image:alt" content="PredictiveGraphs overview figure">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes">
-  <meta name="twitter:description" content="PredictiveGraphs augments open-vocabulary 3D scene graphs with temporal reasoning for predictive navigation in semi-static scenes.">
-  <meta name="twitter:image" content="https://montrealrobotics.ca/predictive-graphs/static/images/predictivegraphs/banner.png">
+  <meta name="twitter:description" content="PredictiveGraphs augments open-vocabulary 3D scene graphs with temporal reasoning for predictive navigation in semi-static scenes. IEEE RA-L 2026.">
+  <meta name="twitter:image" content="https://montrealrobotics.ca/predictive-graphs/static/images/predictivegraphs/banner.jpg">
 
   <meta name="citation_title" content="Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes">
-  <meta name="citation_author" content="Miguel Saavedra-Ruiz">
-  <meta name="citation_author" content="Charlie Gauthier">
-  <meta name="citation_author" content="Kumaraditya Gupta">
-  <meta name="citation_author" content="Shima Shahfar">
-  <meta name="citation_author" content="Kirsty Ellis">
-  <meta name="citation_author" content="Steven Parkison">
-  <meta name="citation_author" content="Liam Paull">
+  <meta name="citation_author" content="Saavedra-Ruiz, Miguel">
+  <meta name="citation_author" content="Gauthier, Charlie">
+  <meta name="citation_author" content="Gupta, Kumaraditya">
+  <meta name="citation_author" content="Shahfar, Shima">
+  <meta name="citation_author" content="Ellis, Kirsty">
+  <meta name="citation_author" content="Parkison, Steven">
+  <meta name="citation_author" content="Paull, Liam">
   <meta name="citation_publication_date" content="2026">
-  <meta name="citation_conference_title" content="ICRA">
+  <meta name="citation_journal_title" content="IEEE Robotics and Automation Letters">
+  <meta name="citation_arxiv_id" content="2605.00121">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2605.00121">
 
   <title>PredictiveGraphs</title>
   <link rel="canonical" href="https://montrealrobotics.ca/predictive-graphs/">
@@ -57,6 +59,7 @@
       --pg-blue: #0c5d99;
       --pg-teal: #137b5b;
       --pg-red: #a9192a;
+      --pg-purple: #3b1f6b;
     }
 
     body {
@@ -74,6 +77,18 @@
       margin-bottom: 1.25rem !important;
     }
 
+    .venue-badge {
+      background: var(--pg-ink);
+      border-radius: 999px;
+      color: #fff;
+      display: inline-block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      margin-bottom: 1.4rem;
+      padding: 0.4rem 1rem;
+    }
+
     .publication-authors {
       margin-bottom: 0.65rem;
     }
@@ -83,6 +98,11 @@
       line-height: 1.55;
       margin: 0 auto 0.5rem;
       max-width: 880px;
+    }
+
+    .publication-affiliations span {
+      display: inline-block;
+      margin: 0 0.5rem;
     }
 
     .contribution-note {
@@ -99,6 +119,36 @@
       background: var(--pg-ink) !important;
     }
 
+    /* Every header button gets the same box so links and "soon" placeholders line up. */
+    .publication-links .link-block {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .publication-links .button {
+      border: 2px solid transparent !important;
+      height: 2.75rem;
+      justify-content: center;
+      margin: 6px 4px !important;
+      width: 10.5rem;
+    }
+
+    .publication-links .button.is-soon,
+    .publication-links .button.is-soon:hover {
+      background: #fff !important;
+      border: 2px dashed #c3cad4 !important;
+      box-shadow: none;
+      color: var(--pg-muted) !important;
+      cursor: default;
+      transform: none;
+    }
+
+    .button.is-soon small {
+      font-size: 0.75rem;
+      font-weight: 500;
+      margin-left: 0.4rem;
+    }
+
     .section {
       padding: 3.25rem 1.5rem;
     }
@@ -107,6 +157,21 @@
       background: var(--pg-soft);
       border-bottom: 1px solid var(--pg-line);
       border-top: 1px solid var(--pg-line);
+    }
+
+    .section-lead {
+      color: var(--pg-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin: -1rem auto 2rem;
+      max-width: 760px;
+      text-align: center;
+    }
+
+    .subsection-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin: 2.75rem 0 1rem;
     }
 
     .figure-shell {
@@ -120,12 +185,8 @@
     }
 
     .banner-figure {
-      margin-top: 1.25rem;
-    }
-
-    .banner-figure img {
-      border: 1px solid var(--pg-line);
-      border-radius: 8px;
+      margin-top: 2.5rem;
+      max-width: 1200px;
     }
 
     .caption {
@@ -141,17 +202,54 @@
       color: var(--pg-ink);
     }
 
-    .abstract-copy {
-      font-size: 1.05rem;
-      line-height: 1.75;
+    /* Collapsible block (extra figures) */
+    details.disclosure {
+      background: #fff;
+      border: 1px solid var(--pg-line);
+      border-radius: 8px;
+      margin-top: 1.5rem;
     }
 
+    details.disclosure summary {
+      cursor: pointer;
+      font-weight: 600;
+      list-style: none;
+      padding: 0.9rem 1.15rem;
+    }
+
+    details.disclosure summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details.disclosure summary::before {
+      content: "\25B8";
+      display: inline-block;
+      margin-right: 0.6rem;
+      transition: transform 0.2s ease;
+    }
+
+    details.disclosure[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    details.disclosure .disclosure-body {
+      border-top: 1px solid var(--pg-line);
+      padding: 1.15rem;
+    }
+
+    .abstract-copy {
+      font-size: 1rem;
+      line-height: 1.75;
+      text-align: justify;
+    }
+
+    /* Videos */
     .video-frame {
+      background: #0f1724;
       border: 1px solid var(--pg-line);
       border-radius: 8px;
       overflow: hidden;
       position: relative;
-      background: #0f1724;
     }
 
     .video-frame video {
@@ -199,23 +297,113 @@
       }
     }
 
-    .results-grid {
-      align-items: start;
+    /* Experiment clips: header (query or title), video, short description. */
+    .clip {
+      background: #fff;
+      border: 1px solid var(--pg-line);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .clip-head {
+      align-items: center;
+      border-bottom: 1px solid var(--pg-line);
+      display: flex;
+      font-size: 0.98rem;
+      font-weight: 600;
+      gap: 0.6rem;
+      line-height: 1.4;
+      padding: 0.7rem 1rem;
+    }
+
+    .clip-head .icon {
+      color: var(--pg-purple);
+      flex-shrink: 0;
+    }
+
+    .clip-head .query {
+      font-weight: 500;
+    }
+
+    .clip-media {
+      position: relative;
+    }
+
+    .clip-media video {
+      background: #fff;
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+
+    .speed-tag {
+      background: rgba(23, 32, 51, 0.78);
+      border-radius: 999px;
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.15rem 0.6rem;
+      pointer-events: none;
+      position: absolute;
+      right: 0.6rem;
+      top: 0.6rem;
+    }
+
+    .clip-body {
+      color: var(--pg-muted);
+      flex-grow: 1;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      padding: 0.7rem 1rem 0.85rem;
+    }
+
+    .clip-body strong {
+      color: var(--pg-ink);
+    }
+
+    .clip-stack {
       display: grid;
-      gap: 2.25rem;
+      gap: 1.75rem;
+    }
+
+    /* Grids */
+    .grid-2,
+    .grid-3 {
+      align-items: stretch;
+      display: grid;
+      gap: 1.75rem;
+    }
+
+    .grid-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      margin-top: 1.5rem;
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .plot-figure {
+      background: #fff;
       border: 1px solid var(--pg-line);
       border-radius: 8px;
+      margin: 0;
       padding: 1rem;
     }
 
     .plot-figure img {
       background: #fff;
       border-radius: 4px;
+      display: block;
+      height: auto;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .plot-figure.is-narrow img {
+      max-width: 620px;
     }
 
     .plot-figure figcaption {
@@ -226,24 +414,61 @@
       text-align: left;
     }
 
-    .wide-figure {
-      border: 1px solid var(--pg-line);
-      border-radius: 8px;
-      margin-top: 2.5rem;
-      padding: 1rem;
+    .plot-figure figcaption strong {
+      color: var(--pg-ink);
     }
 
-    .wide-figure img {
-      background: #fff;
-      border-radius: 4px;
+    .robot-view img {
+      border-radius: 6px;
+      display: block;
+      width: 100%;
     }
 
-    .wide-figure figcaption {
+    .robot-view figcaption {
       color: var(--pg-muted);
-      font-size: 0.95rem;
-      line-height: 1.5;
-      margin-top: 0.9rem;
-      text-align: left;
+      font-size: 0.88rem;
+      margin-top: 0.45rem;
+      text-align: center;
+    }
+
+    .setup-layout {
+      align-items: center;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    }
+
+    .setup-layout img {
+      display: block;
+      margin: 0 auto;
+      max-height: 520px;
+      width: auto;
+      max-width: 100%;
+    }
+
+    .fact-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .fact-list li {
+      align-items: baseline;
+      border-bottom: 1px solid var(--pg-line);
+      display: flex;
+      gap: 0.85rem;
+      line-height: 1.45;
+      padding: 0.7rem 0;
+    }
+
+    .fact-list li:last-child {
+      border-bottom: none;
+    }
+
+    .fact-list .icon {
+      color: var(--pg-purple);
+      flex-shrink: 0;
+      width: 1.25rem;
     }
 
     .accent-blue {
@@ -261,10 +486,42 @@
       font-weight: 700;
     }
 
+    /* BibTeX */
+    .bibtex-wrap {
+      position: relative;
+    }
+
+    .bibtex-wrap pre {
+      font-size: 0.85rem !important;
+      line-height: 1.55;
+      margin: 0;
+      white-space: pre;
+    }
+
+    .bibtex-wrap .copy-bibtex-btn {
+      position: absolute;
+      right: 0.75rem;
+      top: 0.75rem;
+    }
+
     footer.footer {
       background: #fff;
       border-top: 1px solid var(--pg-line);
       padding: 2rem 1.5rem;
+    }
+
+    footer.footer p {
+      color: var(--pg-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 480px) {
+      /* Two header buttons per row on phones. */
+      .publication-links .button {
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        width: 9rem;
+      }
     }
 
     @media (max-width: 768px) {
@@ -272,27 +529,40 @@
         padding-top: 2.75rem;
       }
 
+      .abstract-copy {
+        text-align: left;
+      }
+
       .publication-title {
         font-size: 2.05rem !important;
       }
 
-      .results-grid {
+      .grid-2,
+      .grid-3,
+      .setup-layout {
         grid-template-columns: 1fr;
       }
 
       .section {
         padding: 2.5rem 1.25rem;
       }
+
+      .bibtex-wrap .copy-bibtex-btn {
+        position: static;
+        margin-bottom: 0.75rem;
+      }
     }
   </style>
 </head>
 <body>
   <main>
+    <!-- ============ Header ============ -->
     <section class="hero">
       <div class="hero-body">
         <div class="container is-max-desktop">
           <div class="has-text-centered">
             <h1 class="title is-1 publication-title">Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes</h1>
+            <div class="venue-badge">IEEE Robotics and Automation Letters (RA-L) 2026</div>
             <div class="is-size-5 publication-authors">
               <span class="author-block"><a href="https://mikes96.github.io" target="_blank" rel="noopener">Miguel Saavedra-Ruiz</a><sup>*,1</sup>,</span>
               <span class="author-block"><a href="https://charliegauthier.ca/" target="_blank" rel="noopener">Charlie Gauthier</a><sup>*,1</sup>,</span>
@@ -300,18 +570,38 @@
               <span class="author-block"><a href="https://scholar.google.com/citations?user=kLfWoIcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Shima Shahfar</a><sup>1</sup>,</span>
               <span class="author-block"><a href="https://www.linkedin.com/in/kirsty-ellis-943b8245" target="_blank" rel="noopener">Kirsty Ellis</a><sup>1</sup>,</span>
               <span class="author-block"><a href="https://scholar.google.com/citations?user=0erd9rIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Steven Parkison</a><sup>2</sup>,</span>
-              <span class="author-block">and <a href="https://liampaull.ca/" target="_blank" rel="noopener">Liam Paull</a><sup>1</sup></span>
+              <span class="author-block">and <a href="https://liampaull.ca/" target="_blank" rel="noopener">Liam Paull</a><sup>1,3</sup></span>
             </div>
             <div class="is-size-6 publication-affiliations">
-              <div><sup>1</sup> Department of Computer Science and Operations Research, Université de Montréal, Montréal, QC, Canada, and Mila – Quebec AI Institute, Montréal, QC, Canada</div>
-              <div><sup>2</sup> Hydro-Québec Research Institute, Varennes, QC, Canada</div>
+              <span><sup>1</sup> DIRO, Université de Montréal and Mila – Quebec AI Institute</span>
+              <span><sup>2</sup> Hydro-Québec Research Institute</span>
+              <span><sup>3</sup> Canada CIFAR AI Chair</span>
             </div>
             <div class="contribution-note">* Equal contribution</div>
             <div class="publication-links">
               <span class="link-block">
-                <a href="static/pdfs/PG_APP.pdf" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2605.00121" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
-                  <span>Supplementary Material (Appendix)</span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2605.00121" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- TODO: swap for a link button once the code is public. -->
+              <span class="link-block">
+                <span class="button is-normal is-rounded is-soon" aria-disabled="true" title="Code release coming soon">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code<small>out soon!</small></span>
+                </span>
+              </span>
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1KwM8x9zny1HZXwjEwmueEMOsTbODiFL-/view?usp=sharing" target="_blank" rel="noopener" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-database"></i></span>
+                  <span>Data</span>
                 </a>
               </span>
             </div>
@@ -320,25 +610,27 @@
       </div>
     </section>
 
-    <section class="section">
-      <div class="container is-max-desktop">
+    <!-- ============ Teaser ============ -->
+    <section class="section" style="padding-top: 0.5rem;">
+      <div class="container is-max-widescreen">
         <figure class="figure-shell banner-figure">
-          <img src="static/images/predictivegraphs/banner.png" alt="PredictiveGraphs augments scene graph representations with Perpetua star filters for predictive tempo-spatio-semantic queries.">
-          <figcaption class="caption">
+          <img src="static/images/predictivegraphs/banner.jpg" width="2400" height="1089" fetchpriority="high" alt="PredictiveGraphs augments scene graph representations with Perpetua* filters for predictive tempo-spatio-semantic queries.">
+          <figcaption class="caption" data-caption="banner">
             <strong>PredictiveGraphs</strong> augments open-vocabulary <span class="accent-blue">scene graph representations</span> with persistence modelling capabilities. Coupled with <strong>Perpetua*</strong> we obtain a representation that supports predictive tempo-spatio-semantic queries.
           </figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="section is-soft">
+    <!-- ============ Abstract ============ -->
+    <section class="section is-soft" id="abstract">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column is-four-fifths">
             <h2 class="title is-3 has-text-centered">Abstract</h2>
-            <div class="content has-text-justified abstract-copy">
+            <div class="content abstract-copy">
               <p>
-                We have seen tremendous recent progress in our ability to build "spatio-semantic" representations that enable robots to perform complex reasoning across geometry and semantics. However, the vast majority of these methods lack any ability to perform reasoning across time. This is a desirable property in situations where a robot repeatedly observes an environment where instances may change in between observations, but in a structured way. Consider as an example a home environment where the location of a mug typically moves from the cupboard to a countertop to the sink and then back to the cupboard on a daily basis. We should be able to learn this cyclic behavior and use it to predict the state of the mug in the future. In this work, we propose a method that is able to perform this type of tempo-spatio-semantic reasoning. Underpinning the method is a filter, Perpetua*, that performs Bayesian reasoning on the states of the environment that are observed over time. This filter is integrated within a 3D scene graph structure that we call PredictiveGraphs, where nodes represent objects and edges function as Perpetua* filters encoding spatio-semantic relationships. We validate the method in both simulation and real-world dynamic navigation tasks, where our real world experiments consist of an environment that is undergoing semi-static changes at a bi-hourly frequency over a period of three weeks. In both settings, we demonstrate that our method outperforms baselines in predicting future environment states, even in the presence of distributional shifts.
+                We have seen tremendous recent progress in our ability to build "spatio-semantic" representations that enable robots to perform complex reasoning across geometry and semantics. However, the vast majority of these methods lack any ability to perform reasoning across time. This is a desirable property in situations where a robot repeatedly observes an environment where instances may change in between observations, but in a structured way. Consider as an example a home environment where the location of a mug typically moves from the cupboard to a countertop to the sink and then back to the cupboard on a daily basis. We should be able to learn this cyclic behavior and use it to predict the state of the mug in the future. In this work, we propose a method that is able to perform this type of tempo-spatio-semantic reasoning. Underpinning the method is a filter, Perpetua*, that performs Bayesian reasoning on the states of the environment that are observed over time. This filter is integrated within a 3D scene graph structure that we call PredictiveGraphs, where nodes represent objects and edges function as Perpetua* filters encoding spatio-semantic relationships. We validate the method in both simulation and real-world dynamic navigation tasks, where our real-world experiments consist of an environment that is undergoing semi-static changes at a bi-hourly frequency over a period of three weeks. In both settings, we demonstrate that our method outperforms baselines in predicting future environment states, even in the presence of distributional shifts.
               </p>
             </div>
           </div>
@@ -346,11 +638,12 @@
       </div>
     </section>
 
-    <section class="section is-soft">
+    <!-- ============ Video ============ -->
+    <section class="section" id="video">
       <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered">Sample Experiments</h2>
+        <h2 class="title is-3 has-text-centered">Video</h2>
         <div class="video-frame" id="video-abstract-frame">
-          <video controls preload="metadata" playsinline aria-label="PredictiveGraphs video abstract">
+          <video controls preload="metadata" playsinline poster="static/images/predictivegraphs/posters/video_abstract.jpg" width="1280" height="720" aria-label="PredictiveGraphs video abstract">
             <source src="static/videos/video_abstract.mp4" type="video/mp4">
           </video>
           <div class="video-loader" aria-hidden="true">
@@ -361,29 +654,194 @@
       </div>
     </section>
 
-    <section class="section">
+    <!-- ============ Method ============ -->
+    <section class="section is-soft" id="method">
       <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered">Results</h2>
-        <div class="results-grid">
+        <h2 class="title is-3 has-text-centered">How it works</h2>
+        <div class="grid-2">
           <figure class="plot-figure">
-            <img src="static/images/predictivegraphs/main_barplot.png" alt="Main PredictiveGraphs barplot comparing methods under privileged and noisy perception.">
-            <figcaption>
-              <strong>Main prediction benchmark.</strong> PredictiveGraphs with Perpetua* or FreMEn estimators outperforms baselines under both privileged and noisy perception.
+            <img src="static/images/predictivegraphs/edge_update.jpg" alt="An alarm clock node connected to three receptacles (bed, chair, TV stand) through Perpetua* edges with probabilities 0.85, 0.13 and 0.02." loading="lazy">
+            <figcaption data-caption="edge-update">
+              <strong>Edge Update:</strong> Each semi-static object node has an associated set of Perpetua* estimators (one for each receptacle node it has been observed at). At prediction time, Perpetua* updates the belief of each edge, indicating the object's most likely receptacle.
             </figcaption>
           </figure>
           <figure class="plot-figure">
-            <img src="static/images/predictivegraphs/secondary_barplot.png" alt="Secondary PredictiveGraphs barplot showing simulation adaptation and real-world navigation results.">
-            <figcaption>
-              <strong>Adaptation and real-world navigation.</strong> Perpetua* improves performance under distributional shifts, while PredictiveGraphs supports robust dynamic navigation with noisy real-world data.
+            <img src="static/images/predictivegraphs/perpetua_star_tbma.png" alt="Log prior, likelihood and posterior odds over time for Perpetua*'s emergence and persistence models." loading="lazy">
+            <figcaption data-caption="tbma">
+              <strong>Perpetua* Tempered Bayesian Model Averaging</strong> Positive values favor the emergence model (𝓜<sub>E</sub>), which captures object appearance, while negative values favor the persistence model (𝓜<sub>P</sub>), which captures disappearance. The prior encodes long-term patterns, while the likelihood captures recent observations, letting the model adapt as new data arrives. When observations stop (<i>t<sub>a</sub></i> to <i>t<sub>b</sub></i>), the likelihood fades and the posterior is dominated by the prior, allowing the model to rely on previously learned patterns.
             </figcaption>
           </figure>
         </div>
-        <figure class="figure-shell wide-figure">
-          <img src="static/images/predictivegraphs/doors.png" alt="Predictive navigation door experiment showing blocked shortest path anticipation and feasible replanning.">
-          <figcaption>
+      </div>
+    </section>
+
+    <!-- ============ Simulation ============ -->
+    <section class="section" id="simulation">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Simulation Experiments</h2>
+
+        <figure class="clip">
+          <div class="clip-head">
+            <span class="icon"><i class="fas fa-comment-dots"></i></span>
+            <span class="query" data-caption="sim-laptop.title">"I need to send an email, but I can't find my laptop."</span>
+          </div>
+          <div class="clip-media">
+            <video class="autoplay-clip" muted loop playsinline controls preload="none" poster="static/images/predictivegraphs/posters/sim_laptop.jpg" width="1600" height="696" aria-label="Simulation example: finding a laptop">
+              <source src="static/videos/sim_laptop.mp4" type="video/mp4">
+            </video>
+          </div>
+          <figcaption class="clip-body" data-caption="sim-laptop">
+            PredictiveGraphs predicts the laptop has moved from where it was last seen and navigates straight to its new location.
+          </figcaption>
+        </figure>
+
+        <div class="grid-3" style="margin-top: 1.75rem;">
+          <figure class="clip">
+            <div class="clip-head" data-caption="sim-semistatic.title">A semi-static home</div>
+            <div class="clip-media">
+              <video class="autoplay-clip" muted loop playsinline controls preload="none" poster="static/images/predictivegraphs/posters/sim_semistatic.jpg" width="960" height="572" aria-label="Objects appearing and disappearing in a simulated home">
+                <source src="static/videos/sim_semistatic.mp4" type="video/mp4">
+              </video>
+              <span class="speed-tag">2×</span>
+            </div>
+            <figcaption class="clip-body" data-caption="sim-semistatic">Objects move, vanish and reappear over time.</figcaption>
+          </figure>
+          <figure class="clip">
+            <div class="clip-head" data-caption="sim-alarm-clock.title">Finding the alarm clock</div>
+            <div class="clip-media">
+              <video class="autoplay-clip" muted loop playsinline controls preload="none" poster="static/images/predictivegraphs/posters/sim_alarm_clock.jpg" width="960" height="572" aria-label="Simulation example: navigating to an alarm clock">
+                <source src="static/videos/sim_alarm_clock.mp4" type="video/mp4">
+              </video>
+              <span class="speed-tag">20×</span>
+            </div>
+            <figcaption class="clip-body" data-caption="sim-alarm-clock">Predicted on the chair.</figcaption>
+          </figure>
+          <figure class="clip">
+            <div class="clip-head" data-caption="sim-soap-bottle.title">Finding the soap bottle</div>
+            <div class="clip-media">
+              <video class="autoplay-clip" muted loop playsinline controls preload="none" poster="static/images/predictivegraphs/posters/sim_soap_bottle.jpg" width="960" height="572" aria-label="Simulation example: navigating to a soap bottle">
+                <source src="static/videos/sim_soap_bottle.mp4" type="video/mp4">
+              </video>
+              <span class="speed-tag">10×</span>
+            </div>
+            <figcaption class="clip-body" data-caption="sim-soap-bottle">Predicted on the side table.</figcaption>
+          </figure>
+        </div>
+
+        <h3 class="subsection-title">Results</h3>
+        <figure class="plot-figure is-narrow">
+          <img src="static/images/predictivegraphs/results_sim_navigation.svg" alt="Bar plots of success and SPL for static, dynamic and absent objects comparing CG, CG+LLM, CG+LLM+History, HOMER, FlowMaps and PredictiveGraphs, under privileged and CLIP+LLM perception." loading="lazy">
+          <figcaption data-caption="sim-results">
+            <strong>Main prediction benchmark.</strong> PredictiveGraphs with Perpetua* or FreMEn estimators outperforms baselines under both privileged and noisy perception.
+          </figcaption>
+        </figure>
+
+        <details class="disclosure">
+          <summary>All 15 simulated homes</summary>
+          <div class="disclosure-body">
+            <img src="static/images/predictivegraphs/procthor_scenes.jpg" alt="Top-down views of the 15 ProcTHOR environments used in the experiments." loading="lazy" style="display:block; margin:0 auto; max-width:640px; width:100%;">
+            <p class="caption" data-caption="procthor-homes">
+              <strong>ProcTHOR environments:</strong> Top-down view of the different 15 ProcTHOR scenes used in the simulation experiments. Each scene has at least 5 rooms and a navigable space between 100 m² and 150 m².
+            </p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- ============ Real world ============ -->
+    <section class="section is-soft" id="real-world">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Real-World Experiments</h2>
+
+        <div class="setup-layout">
+          <img src="static/images/predictivegraphs/real_lab_pcd.webp" alt="Top-down and perspective point clouds of the three-room laboratory, with receptacles outlined." loading="lazy">
+          <ul class="fact-list">
+            <li><span class="icon"><i class="fas fa-calendar-alt"></i></span><span><strong>3 weeks</strong> of semi-static changes, updated every <strong>2 hours</strong></span></li>
+            <li><span class="icon"><i class="fas fa-door-open"></i></span><span><strong>3 rooms</strong>, <strong>28 receptacles</strong>, <strong>21 objects</strong></span></li>
+            <li><span class="icon"><i class="fas fa-comment-dots"></i></span><span><strong>100</strong> open-vocabulary queries, up to a week ahead</span></li>
+            <li><span class="icon"><i class="fas fa-robot"></i></span><span>Agilex Ranger Mini 2.0 with a RealSense D435 camera</span></li>
+          </ul>
+        </div>
+
+        <div class="clip-stack" style="margin-top: 2.5rem;">
+          <figure class="clip">
+            <div class="clip-head">
+              <span class="icon"><i class="fas fa-comment-dots"></i></span>
+              <span class="query" data-caption="real-doors.title">"Is there something useful to comb my hair?"</span>
+            </div>
+            <div class="clip-media">
+              <video class="autoplay-clip" muted loop playsinline controls preload="none" poster="static/images/predictivegraphs/posters/real_doors.jpg" width="1600" height="696" aria-label="Real-world door experiment">
+                <source src="static/videos/real_doors.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption class="clip-body">
+              <span data-caption="real-doors">The graph predicts the hair brush is in another room and that the door on the shortest path is closed, so the robot takes the longer, open route.</span>
+            </figcaption>
+          </figure>
+          <figure class="clip">
+            <div class="clip-head">
+              <span class="icon"><i class="fas fa-comment-dots"></i></span>
+              <span class="query" data-caption="real-replanning.title">"Could you get me a healthy vegetable?"</span>
+            </div>
+            <div class="clip-media">
+              <video class="autoplay-clip" muted loop playsinline controls preload="none" poster="static/images/predictivegraphs/posters/real_replanning.jpg" width="1600" height="696" aria-label="Real-world replanning experiment">
+                <source src="static/videos/real_replanning.mp4" type="video/mp4">
+              </video>
+            </div>
+            <figcaption class="clip-body">
+              <span data-caption="real-replanning">The carrot isn't at the most likely receptacle, so the robot moves on to the next-best prediction and finds it there.</span>
+            </figcaption>
+          </figure>
+        </div>
+
+        <h3 class="subsection-title">What the robot sees on arrival</h3>
+        <div class="grid-3">
+          <figure class="robot-view">
+            <img src="static/images/predictivegraphs/robot_view_doors.jpg" alt="Segmented camera view showing a hair brush on a table." loading="lazy">
+            <figcaption data-caption="robot-view-1">Hair brush</figcaption>
+          </figure>
+          <figure class="robot-view">
+            <img src="static/images/predictivegraphs/robot_view_replanning.jpg" alt="Segmented camera view showing a carrot on a desk." loading="lazy">
+            <figcaption data-caption="robot-view-2">Carrot</figcaption>
+          </figure>
+          <figure class="robot-view">
+            <img src="static/images/predictivegraphs/robot_view_room_c.jpg" alt="Segmented camera view showing a panda plushie on a table." loading="lazy">
+            <figcaption data-caption="robot-view-3">Panda plushie</figcaption>
+          </figure>
+        </div>
+
+        <h3 class="subsection-title">Results</h3>
+        <figure class="figure-shell plot-figure">
+          <img src="static/images/predictivegraphs/doors.jpg" alt="Predictive navigation door experiment showing blocked shortest path anticipation and feasible replanning." loading="lazy">
+          <figcaption data-caption="doors">
             <strong>Predictive Navigation:</strong> PredictiveGraphs uses its predictive capabilities to anticipate that the shortest path to its goal is blocked (<span class="accent-red">low probability</span>). This allows it to preemptively adapt its navigation plan, choosing a path that is longer but feasible (<span class="accent-teal">high probability</span>), and successfully reaching the target without visiting unnecessary locations.
           </figcaption>
         </figure>
+        <figure class="plot-figure is-narrow" style="margin-top: 1.75rem;">
+          <img src="static/images/predictivegraphs/results_adaptation_real.svg" alt="Bar plots for adaptive navigation in simulation (left) and real-world navigation (right) comparing CG, DualMap, HOMER, FlowMaps and PredictiveGraphs." loading="lazy">
+          <figcaption data-caption="adaptation-real">
+            <strong>Adaptation and real-world navigation.</strong> Perpetua* improves performance under distributional shifts, while PredictiveGraphs supports robust dynamic navigation with noisy real-world data.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Citation ============ -->
+    <section class="section" id="bibtex">
+      <div class="container is-max-desktop">
+        <h2 class="title is-3 has-text-centered">Citation</h2>
+        <div class="bibtex-wrap">
+          <button class="copy-bibtex-btn" type="button" id="copy-bibtex">
+            <i class="fas fa-copy"></i><span class="copy-text">Copy</span>
+          </button>
+<pre><code id="bibtex-code">@article{saavedra2026predictive,
+  title   = {Predictive Spatio-Temporal Scene Graphs for Semi-Static Scenes},
+  author  = {Saavedra-Ruiz, Miguel and Gauthier, Charlie and Gupta, Kumaraditya and
+             Shahfar, Shima and Ellis, Kirsty and Parkison, Steven and Paull, Liam},
+  journal = {IEEE Robotics and Automation Letters},
+  year    = {2026}
+}</code></pre>
+        </div>
       </div>
     </section>
   </main>
@@ -392,7 +850,7 @@
     <div class="container is-max-desktop">
       <div class="content has-text-centered">
         <p>
-          This project page was adapted from the Academic Project Page Template.
+          This project page was adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>.
         </p>
       </div>
     </div>
@@ -409,6 +867,35 @@
       if (video.readyState >= 2) {
         markReady();
       }
+    }
+
+    // Play the short experiment clips only while they are on screen.
+    const clips = document.querySelectorAll("video.autoplay-clip");
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if ("IntersectionObserver" in window && !reduceMotion) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const clip = entry.target;
+          if (entry.isIntersecting) {
+            clip.play().catch(() => {});
+          } else {
+            clip.pause();
+          }
+        });
+      }, { threshold: 0.35 });
+      clips.forEach((clip) => observer.observe(clip));
+    }
+
+    const copyButton = document.getElementById("copy-bibtex");
+    if (copyButton) {
+      copyButton.addEventListener("click", () => {
+        const text = document.getElementById("bibtex-code").textContent;
+        navigator.clipboard.writeText(text).then(() => {
+          copyButton.classList.add("copied");
+          setTimeout(() => copyButton.classList.remove("copied"), 2000);
+        });
+      });
     }
   </script>
 </body>
